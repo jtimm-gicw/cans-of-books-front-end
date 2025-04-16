@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
+import './App.css';
 import { Carousel } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import bookImg from './book.png';
+
 
 class BestBooks extends React.Component {
   constructor(props) {
@@ -55,7 +57,7 @@ class BestBooks extends React.Component {
                     fluid
                   />
                   <Carousel.Caption id="carousel-text-box">
-                    <h2 className="carousel-text">{book.title}</h2>
+                    <h3 className="carousel-text">{book.title}</h3>
                     <p className="carousel-text">{book.description}</p>
                     <p className="carousel-text">Status: {book.status}</p>
                   </Carousel.Caption>
