@@ -9,6 +9,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import About from './About';
 
 class App extends React.Component {
   render() {
@@ -20,9 +21,14 @@ class App extends React.Component {
             <Routes>
               <Route 
                 exact path="/"
-                element={<BestBooks />}
+                element={<BestBooks />
+                }
               />
-              {/* Add About route here later */}
+               <Route 
+                exact path="/about"
+                element={<About />
+                }
+              />{/* Add About route here later */}
             </Routes>
           </div>
           <Footer />
