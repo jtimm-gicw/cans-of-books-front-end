@@ -22,8 +22,12 @@ body h2 {
     padding: 10px;
 }
 
-p {
+.main-content p {
     color: black;
+}
+
+p {
+    color: white;
 }
 
 .nav-item {
